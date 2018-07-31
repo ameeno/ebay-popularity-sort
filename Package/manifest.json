@@ -2,7 +2,7 @@
     "name": "eBay™ Popularity Sort",
     "description": "A chrome extension that sorts the eBay™ search results by popularity (number of times sold).",
     "manifest_version": 2,
-    "version": "1.0.5",
+    "version": "1.0.6",
     "applications": {
         "gecko": {
             "id": "test@arunshah.co.uk",
