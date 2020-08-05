@@ -2,7 +2,7 @@
   "name": "eBay™ Popularity Sort",
   "description": "A Firefox extension that sorts the eBay™ search results by popularity (number of times sold).",
   "manifest_version": 2,
-  "version": "1.0.7",
+  "version": "1.0.8",
   "applications": {
     "gecko": {
       "id": "test@arunshah.co.uk",
@@ -21,7 +21,36 @@
   },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
+      "matches": [
+        "*://*.ebay.com.au/*",
+        "*://*.ebay.at/*",
+        "*://*.ebay.ca/*",
+        "*://*.ebay.com.cn/*",
+        "*://*.ebay.cz/*",
+        "*://*.ebay.dk/*",
+        "*://*.ebay.fi/*",
+        "*://*.ebay.fr/*",
+        "*://*.ebay.de/*",
+        "*://*.ebay.gr/*",
+        "*://*.ebay.com.hk/*",
+        "*://*.ebay.hu/*",
+        "*://*.ebay.in/*",
+        "*://*.ebay.ie/*",
+        "*://*.ebay.it/*",
+        "*://*.ebay.com.my/*",
+        "*://*.ebay.nl/*",
+        "*://*.ebay.ph/*",
+        "*://*.ebay.pl/*",
+        "*://*.ebay.pt/*",
+        "*://*.ebay.ru/*",
+        "*://*.ebay.com.sg/*",
+        "*://*.ebay.es/*",
+        "*://*.ebay.ch/*",
+        "*://*.ebay.co.th/*",
+        "*://*.ebay.co.uk/*",
+        "*://*.ebay.com/*",
+        "*://*.ebay.vn/*"
+      ],
       "js": ["assets/js/jquery.js", "assets/js/content.js"]
     }
   ],
